@@ -28,6 +28,11 @@ public class Solution {
         return result;
     }
 
+    /**
+     * 最优解法
+     * @param nums
+     * @return
+     */
     public static int[] runningSum2(int[] nums) {
         for(int i = 1; i < nums.length; i++){
             nums[i] = nums[i -1] + nums[i];
