@@ -64,8 +64,9 @@ public class TreeLevelTraversalPractice {
         if (currentLevelList.size() == 0) {
             return;
         }
-        // 每一层需要判断的
+        // 下一层需要判断的节点
         List<TreeNode> levelList = new ArrayList<>();
+        // 当前层的结果
         List<Integer> levelResult = new ArrayList<>(currentLevelList.size());
         for (TreeNode node : currentLevelList) {
             levelResult.add(node.val);
@@ -76,7 +77,9 @@ public class TreeLevelTraversalPractice {
                 levelList.add(node.right);
             }
         }
+        // 把当前层的结果添加到返回结果中
         result.add(levelResult);
+        // 再次调用递归函数
         recursiveLevelTraversal(levelList, result);
     }
 
