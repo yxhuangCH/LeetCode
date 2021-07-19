@@ -9,7 +9,7 @@ import java.util.Stack;
 /**
  * 数的遍历
  */
-public class Tree1 {
+public class TreeTraversal {
 
     public static void main(String[] args) {
 
