@@ -76,12 +76,12 @@ public class TreeBinaryTreePaths {
 
         if (root.left != null) {
             traversal(root.left, path, result);
-            path.remove(path.size() - 1);// 回溯
+            path.remove(path.size() - 1);// 回溯 ???
         }
 
         if (root.right != null) {
             traversal(root.right, path, result);
-            path.remove(path.size() - 1);// 回溯
+            path.remove(path.size() - 1);// 回溯 ???
         }
     }
 }
