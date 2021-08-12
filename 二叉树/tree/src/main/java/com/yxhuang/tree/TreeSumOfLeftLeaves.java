@@ -24,12 +24,14 @@ public class TreeSumOfLeftLeaves {
         TreeNode root = new TreeNode(3);
         root.left = new TreeNode(9);
         root.right = new TreeNode(20, new TreeNode(15), new TreeNode(7));
-        int result = sumOfLeftLeaves2(root);
+//        int result = sumOfLeftLeaves2(root);
+        int result = sumOfLeftLeaves3(root);
         System.out.println("result : "+ result);
     }
 
     // 层序遍历
     // 这是最早的写法，是错误的，没有对左叶子，而不是二叉树的左侧节点
+    @Deprecated
     public static int sumOfLeftLeaves(TreeNode root) {
         if (root == null) {
             return 0;
@@ -88,4 +90,29 @@ public class TreeSumOfLeftLeaves {
 
         return result;
     }
+
+    /**
+     * 使用递归
+     *  采取后序遍历， 左右中
+     * @param root
+     * @return
+     */
+    public static int sumOfLeftLeaves3(TreeNode root){
+        //　终止条件
+        if (root == null){
+            return  0;
+        }
+
+        int leftSum = sumOfLeftLeaves3(root.left);
+        int rightSum = sumOfLeftLeaves3(root.right);
+
+        // ???
+        int midValue = 0;
+        if (root.left != null && root.left.left == null && root.left.right == null){
+            midValue = root.left.val;
+        }
+        return midValue + leftSum + rightSum;
+    }
+
+
 }
