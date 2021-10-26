@@ -1,5 +1,9 @@
 package com.yxhuang.tree;
 
+/**
+ * 112. 路径总和
+ * https://leetcode-cn.com/problems/path-sum/
+ */
 public class TreeHasPathSum {
 
     public static void main(String[] args) {
