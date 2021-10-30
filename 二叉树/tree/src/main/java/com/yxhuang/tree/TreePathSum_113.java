@@ -7,7 +7,7 @@ import java.util.*;
  * 113. 路径总和 II
  * https://leetcode-cn.com/problems/path-sum-ii/
  */
-public class TreePathSum {
+public class TreePathSum_113 {
 
     private static List<List<Integer>> mSumPathList = new ArrayList<>();
 

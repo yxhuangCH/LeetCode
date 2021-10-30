@@ -2,7 +2,7 @@ package com.yxhuang.tree;
 
 import java.util.Arrays;
 
-public class TreeConstructMaximumBinaryTree {
+public class TreeConstructMaximumBinaryTree_654 {
 
     /**
      * 654. 最大二叉树

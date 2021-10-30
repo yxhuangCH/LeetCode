@@ -2,7 +2,7 @@ package com.yxhuang.tree;
 
 import java.util.*;
 
-public class TreeSumOfLeftLeaves {
+public class TreeSumOfLeftLeaves_404 {
 
     /**
      * 404. 左叶子之和

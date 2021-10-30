@@ -3,7 +3,7 @@ package com.yxhuang.tree;
 
 import java.util.*;
 
-public class TreeBinaryTreePaths {
+public class TreeBinaryTreePaths_257 {
 
     /**
      * 257. 二叉树的所有路径

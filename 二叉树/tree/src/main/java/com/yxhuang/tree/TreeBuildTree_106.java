@@ -6,7 +6,7 @@ import java.util.Arrays;
  *  106. 从中序与后序遍历序列构造二叉树
  *  https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
  */
-public class TreeBuildTree {
+public class TreeBuildTree_106 {
 
     public static void main(String[] args) {
         int[] inorder = new int[]{9, 3,15,20,7};

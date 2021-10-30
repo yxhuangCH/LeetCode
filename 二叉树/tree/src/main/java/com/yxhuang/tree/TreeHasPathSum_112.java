@@ -4,7 +4,7 @@ package com.yxhuang.tree;
  * 112. 路径总和
  * https://leetcode-cn.com/problems/path-sum/
  */
-public class TreeHasPathSum {
+public class TreeHasPathSum_112 {
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
