@@ -85,7 +85,7 @@ public class TreeConstructMaximumBinaryTree_654 {
             return null;
         }
 
-        // 找到数组中最大的值的下标
+        // 找到数组中最大的值的下标   int[] nums = {3, 2, 1, 6, 0, 5};
         int maxIndex = maxIndex(nums, leftIndex, rightIndex);
         int maxValue = nums[maxIndex];
         System.out.println("maxIndex:" + maxIndex + " maxValue: " + maxValue);
