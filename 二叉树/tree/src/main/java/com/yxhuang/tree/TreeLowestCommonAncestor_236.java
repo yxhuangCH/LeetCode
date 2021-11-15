@@ -43,13 +43,14 @@ public class TreeLowestCommonAncestor_236 {
 
         TreeNode leftNode = recursiveCommonAncestor(root.left, p, q);
         TreeNode rightNode = recursiveCommonAncestor(root.right, p, q);
-        // 后续遍历
+        // 后序遍历
         // 处理每一层的逻辑
         // 如果找到左边节点和右边节点，则返回这个节点
         if (leftNode != null && rightNode != null) {
             return root;
         }
 
+        // 因为要传递这上去，所以要返回
         // 左边节点没有，右边找到，则返回右边的
         if (leftNode == null && rightNode != null) {
             return rightNode;
@@ -58,7 +59,7 @@ public class TreeLowestCommonAncestor_236 {
         if (leftNode != null && rightNode == null) {
             return leftNode;
         }
-
+        // leftNode == null && rightNode == null
         return null;
     }
 }
