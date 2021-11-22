@@ -65,5 +65,5 @@ public class TreeTrimBST_669 {
 
         return root;
     }
-    
+
 }
