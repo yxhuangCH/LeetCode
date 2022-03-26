@@ -37,7 +37,7 @@ public class Backtrace_77_2 {
     private static List<List<Integer>> mResult = new ArrayList<>();
 
     public static void main(String[] args) {
-        List<List<Integer>> combine = combine(1, 1);
+        List<List<Integer>> combine = combine(4, 2);
         for (List<Integer> item : combine) {
             for (int i : item) {
                 System.out.print(i + "");
@@ -67,7 +67,7 @@ public class Backtrace_77_2 {
             mResult.add(new ArrayList<>(mPath)); // 这里是要复制一个新的进去，而不是直接放进去
             return;
         }
-        // 每一层的遍历
+        // 每一层的遍历， 剪枝优化
         for (int i = startIndex; i <= n - (k - mPath.size()) + 1; i++) {
             mPath.add(i);
             backtrace(n, k, i + 1);
