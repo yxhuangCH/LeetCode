@@ -1,6 +1,5 @@
 package com.yxhuang.backtrace;
 
-import com.sun.tools.javac.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;
